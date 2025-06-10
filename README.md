@@ -40,8 +40,8 @@ The script authenticates using a **service account**. To create one:
 1. Visit the [Google Cloud Console](https://console.cloud.google.com/).
 2. Create a project and enable the **Drive API**.
 3. Create a service account and download a JSON key file.
-4. Share the Drive folder identified by `DRIVE_ROOT_ID` with the service
-   account's email address so the script can upload files.
-
-You can obtain the folder ID from the URL when browsing the folder in
-Google Drive.
+4. Create a folder in your Google Drive and share it with the service
+   account's email address, giving it **Editor** access.
+5. Copy the last part of that folder's URL, for example from
+   `https://drive.google.com/drive/folders/\<ID\>`, and use it as the
+   value of `DRIVE_ROOT_ID`.
